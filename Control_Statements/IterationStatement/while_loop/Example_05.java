@@ -1,0 +1,28 @@
+/*Q) Write a java program to perform sum of digits of a given number?
+
+input:
+	123
+
+output:
+	6 
+	*/
+import java.util.Scanner;
+class Example_05 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Please enter the number");
+		int n = sc.nextInt();
+		
+		int rev , sum =0;
+		
+		while(n>0)
+		{
+			rev = n%10;
+			sum = sum + rev;
+			n = n/10;
+		}
+		System.out.println(sum);
+	}
+}

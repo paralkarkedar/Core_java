@@ -1,0 +1,33 @@
+/*Q) Write a java program to find out given number is palindrome or not?
+
+input:
+	121
+
+output:
+	It is a palindrome number 
+	*/
+
+import java.util.Scanner;
+class Example_08 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Please enter the number");
+		int n = sc.nextInt();
+		
+		int tem = n;
+		
+		int rem, rev =0;
+		while(n>0){
+			rem = n%10;
+			rev = rev*10+rem;
+			n = n/10;
+	}
+	
+	if(tem == rev)
+		System.out.println("It is a palindrome number....");
+	else
+		System.out.println("It is a not palindrome number....");
+}
+}

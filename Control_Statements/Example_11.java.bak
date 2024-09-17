@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class Example_11 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("please enter the number:");
+		int num = sc.nextInt();
+		
+		switch(num){
+			case 100: System.out.println("Thank you for calling 100...");
+			break;
+		    case 200: System.out.println("Thank you for calling 200...");
+			break;
+		    case 300: System.out.println("Thank you for calling 300...");
+			break;
+			
+			default : System.out.println("Please enter the valid number..");
+		}
+	}
+}

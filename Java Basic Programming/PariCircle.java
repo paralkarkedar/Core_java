@@ -1,0 +1,17 @@
+
+import java.util.Scanner;
+class PariCircle
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Please enter the perimeter of circle:");
+		Scanner sc = new Scanner(System.in);
+		int  r = sc.nextInt();
+		
+		//logic
+		
+		float ans = 2*3.14f*r;
+		
+		System.out.println("the parimeter of circle is : "+ ans);
+	}
+}

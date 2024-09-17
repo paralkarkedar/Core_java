@@ -1,0 +1,15 @@
+import java.util.Scanner;
+//Q) Write a java program to display square of a given number?
+class Square 
+{
+	public static void main(String[] args) 
+	{
+		
+		System.out.println("Enter the Number:");
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		
+		int ans = num*num;
+		System.out.println(ans);
+	}
+}

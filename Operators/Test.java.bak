@@ -1,0 +1,249 @@
+
+
+
+// Operators in java 
+
+/*We have following list of operators in java.
+
+1) Assignment operators 
+
+2) Conditional/Ternary operators 
+
+3) Logical operators 
+
+4) Bitwise operators
+
+5) Arithmetic operators 
+
+6) Relational operators 
+
+7) Shift operators 
+
+8) Unary operators 
+
+
+*/
+
+
+
+
+// 1) Assignment operators 
+
+/*
+class Test 
+{
+	public static void main(String[] args) 
+	{
+		int a = 20;
+		 a =40;
+		 System.out.println(a);
+	}
+}
+
+
+/
+class Test  
+{
+	
+	public static void main(String[] args)
+	{
+		int i=10;
+		
+		i%=15; // i = i % 15;
+		
+		System.out.println(i); //10
+	}
+}
+
+*/
+
+
+
+
+
+
+//2) Conditional/Ternary operators 
+
+/*class Test 
+{
+	public static void main(String[] args){
+		
+		boolean b = (9>7)?true:false;
+		System.out.println(b);
+		
+		String s = (28>8)?"hii":"hello";
+	    System.out.println(s);
+		}
+}
+*/
+
+
+//Q) Write a java program to find out grestest of two numbers?
+
+/*import java.util.*;
+class Test 
+{
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter the first num:");
+		int a = sc.nextInt();
+		
+		System.out.println("Enter the second num:");
+		int b = sc.nextInt();
+		
+		int max = (a>b)?a:b;
+		
+		System.out.println("Max"+ " "+ max);
+		
+		}
+}
+
+*/
+
+// Q) Write a java program to find out greatest of three numbers?
+
+/*
+import java.util.*;
+class Test 
+{
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter the first num:");
+		int a = sc.nextInt();
+		
+		System.out.println("Enter the second num:");
+		int b = sc.nextInt();
+		
+		System.out.println("Enter the third num:");
+		int c = sc.nextInt();
+		
+		int max = (a>b)?((a>c)?a:c):((b>c)?b:c);
+		
+		System.out.println("Max =" + " " + max );
+		}
+	}
+	*/
+	
+	
+	
+	//3) Logical operators 
+	
+	
+	/*class Test
+	{
+		public static void main(String[] args)
+		{
+			boolean b = (5>3) && (89<899);
+			System.out.println(b);
+			
+			
+			}
+		
+	}
+	*/
+	
+	
+	
+	// Logical OR operator (||)
+	
+	/*
+	class Test
+	{
+		public static void main(String[] args)
+		{
+			boolean b = (5>9) || (89<899);
+			System.out.println(b);
+			
+			
+			}
+		
+	}
+	*/
+	
+	//Logical NOT operator (!)
+	
+/*	class Test
+	{
+		public static void main(String []args){
+			
+			boolean b = ! (9>33);
+			
+			System.out.println(b);
+			}
+	} */
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	//8) Unary operators  (Important Operator)
+	
+	/*ex:
+	
+	class Test
+	{
+		public static void main(String []args){
+			
+			int i = 10;
+			int j = 10;
+			
+			i++;
+			System.out.println(i); //11
+			System.out.println(j++); //10
+			}
+	} 
+	*/
+	
+	
+	/*class Test
+	{
+		public static void  main(String args[])
+		{
+			int i = 10;
+			int j = i++ + i++ + i++;
+			System.out.println( i +" " + j); // 13 33 
+			
+			//System.out.println(i+ " " + j); //11 , 10
+			}
+	}
+	*/
+	
+	
+	// Pre-Increment/Decrement 
+	
+	class Test
+	{
+		public static void main(String[] args){
+			//int i = 10 , j  = 20 ;
+			//++i;
+			 //j--;
+			//System.out.println(i+ " "+j);
+			
+			int i = 10;
+			
+			int j = --i  + --i;
+			
+			System.out.println(i + " " + j);
+			
+			}
+	}
+	
+	
+	
+	

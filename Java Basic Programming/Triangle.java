@@ -1,0 +1,21 @@
+
+//Write a java program to find out area of a triangle?
+import java.util.*;
+
+class Triangle 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("please enter the base:");
+		Scanner sc = new Scanner(System.in);
+		
+		int base = sc.nextInt();
+		
+		System.out.println("please enter the height:");
+		int height = sc.nextInt();
+		
+		int ans = (height*base)/2;
+		
+		System.out.println("Area of triangle: " +  ans);
+	}
+}

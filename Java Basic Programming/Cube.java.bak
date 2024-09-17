@@ -1,0 +1,31 @@
+//Q) Write a java program to display cube of a given number?
+/*import java.util.Scanner;
+class Cube 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Please enter the num:");
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		int ans = num*num*num;
+		System.out.println("The square :"+ans);
+	}
+}
+*/
+
+
+
+//approach2
+
+import java.util.Scanner;
+class Cube 
+{
+	public static void main(String args[]){
+		System.out.println("Enter the num:");
+		int num = sc.nextInt();
+	
+	int ans = (int)Math.pow(num,3);
+	System.out.println(ans);
+	
+}
+}
