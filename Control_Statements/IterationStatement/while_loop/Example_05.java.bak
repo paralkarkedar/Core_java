@@ -17,7 +17,7 @@ class Example_05
 		
 		int rev , sum =0;
 		
-		while(n>1)
+		while(n>0)
 		{
 			rev = n%10;
 			sum = sum + rev;

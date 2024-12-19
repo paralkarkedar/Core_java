@@ -1,0 +1,35 @@
+//2) Multi Level Inheritance 
+
+class A
+{
+	public void m1(){
+		System.out.println("m1 method");
+	}
+}
+class B extends A
+
+{
+     public void m2(){
+		System.out.println("m2 method");
+     }
+} 
+
+class C extends B
+{
+	public static void m3(){
+		System.out.println("m3 method");
+	}
+}
+
+
+
+class  Inheritance_02
+{
+	public static void main(String[] args) 
+	{
+	
+	A a = new A();
+	a.m1();
+	
+	}
+}

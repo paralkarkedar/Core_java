@@ -1,0 +1,38 @@
+// Method overriding
+
+class Parent
+{
+	public void property(){
+		System.out.println("gold + land + house");
+	}
+		
+		public void marry(){
+			System.out.println("Rashmika");
+		}
+}
+
+class Child extends Parent
+{
+	public void marry(){
+		System.out.println("Trisha");
+	}
+}
+
+class MethodOrriding 
+{
+	public static void main(String[] args) 
+	{
+		Parent p = new Parent();
+		p.property();
+		p.marry();
+		
+		Child c = new Child();
+		c.property();
+		c.marry();
+		
+		Parent p1 = new Child();
+				p1.property();
+		p1.marry();
+		
+	}
+}

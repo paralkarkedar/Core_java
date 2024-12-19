@@ -1,0 +1,23 @@
+//Constructor overloading
+class A 
+{
+	A(){
+		System.out.println("This is first Method");
+	}
+	A(int a){
+		System.out.println("This is second Method");
+	}
+	A(double b){
+		System.out.println("This is third Method");
+	}
+}
+class  Constructor_03
+{
+	public static void main(String[] args) 
+	{
+		A a = new A();
+		A a1 = new A(4);
+		A a2 =  new A(23.3d);
+		System.out.println(a1);
+	}
+}

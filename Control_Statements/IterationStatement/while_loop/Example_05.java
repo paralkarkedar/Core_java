@@ -15,12 +15,12 @@ class Example_05
 		System.out.println("Please enter the number");
 		int n = sc.nextInt();
 		
-		int rev , sum =0;
+		int rem , sum =0;
 		
 		while(n>0)
 		{
-			rev = n%10;
-			sum = sum + rev;
+			rem = n%10;
+			sum = sum + rem;
 			n = n/10;
 		}
 		System.out.println(sum);

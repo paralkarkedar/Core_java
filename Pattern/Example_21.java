@@ -1,0 +1,37 @@
+/*
+
+
+Q) Write a java program to display below loop pattern?
+   
+    *
+   * * 
+  * * *
+ * * * * 
+* * * * *
+
+*/
+
+class Example_21 
+{
+	public static void main(String[] args) 
+	{
+		for(int i = 0; i<5; i++){
+			
+		
+		// space 
+		
+		for(int j = 4; j>i; j--){
+		
+		System.out.print("  "  );
+		}
+		
+		for(int k = 1; k <=i; k++){
+			
+			System.out.print(" * " );
+		}
+		
+		System.out.println();
+		
+		}
+	}
+}

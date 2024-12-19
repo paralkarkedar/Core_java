@@ -1,3 +1,11 @@
+/*Q) Write a java program to find out given number is armstrong or not?
+
+input:
+	153
+
+output:
+	It is a armstrong number (1*1*1+5*5*5+3*3*3)(1+125+27)(153)*/
+
 import java.util.Scanner;
 class Example_06
 {

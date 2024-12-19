@@ -1,0 +1,22 @@
+/*
+
+String important methods
+=========================
+Q) Write a java program to find out length of a string?
+
+Q) Write a java program to convert given string to lowercase letter?
+
+*/
+
+
+class String_01 
+{
+	public static void main(String[] args) 
+	{
+	     String str = "ihub";
+		 System.out.println(str.length());
+		 
+		 String str1 = "KEDARPARALKAR";
+		 System.out.println(str1.toLowerCase());
+	}
+}

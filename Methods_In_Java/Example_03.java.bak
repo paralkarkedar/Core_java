@@ -1,0 +1,20 @@
+// Q) Write a java program to find out area of a circle using with return with no argument method?
+import java.util.*;
+class Example_03 
+{
+	public static void main(String[] args) 
+	{
+	float area = circle();
+	System.out.println(area);
+	}
+	
+	public static int circle(){
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter the radius:");
+		
+		int r = sc.nextInt();
+		float  area = 3.13f*r*r;
+		return area;
+	}
+}

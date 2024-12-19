@@ -1,0 +1,12 @@
+import java.util.*;
+class Example_01 
+{
+	public static void main(String[] args) 
+	{
+		StringTokenizer st = new StringTokenizer("this is kedar paralkar", " ");
+		while(st.hasMoreTokens()){
+			String s = st.nextToken();
+			System.out.println(s);
+		}
+	}
+}

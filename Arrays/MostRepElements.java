@@ -1,0 +1,34 @@
+/* 
+Q) Write a java program to find out most repeating element in a given array?
+
+input:
+	7 3 2 7 3 5 7 3 7 
+
+output:
+	7 repeating for 4 times 
+	*/
+	
+class  MostRepElements
+{
+	public static void main(String[] args) 
+	{
+		int arr[] = {7 ,3 ,2 ,7 ,3 ,5 ,7 ,3 ,7 };
+		int maxCount = 0;
+		int element = 0;
+		for(int i = 0; i< arr.length; i++){
+			int count = 0;
+			for(int j = 0; j<arr.length; j++){
+			if(arr[i] == arr[j]){
+				count++;
+			}
+	
+	  }
+	   if(count>maxCount){
+		maxCount = count;
+		element = arr[i];
+		
+	  }
+	  }
+	  System.out.println(element+" repeating for "+maxCount+" times");
+	}
+}
