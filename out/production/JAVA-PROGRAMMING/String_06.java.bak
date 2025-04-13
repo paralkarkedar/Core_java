@@ -1,0 +1,20 @@
+
+/*
+Q) Write a java program to remove special characters from given string?
+
+input:
+	I_hub@Ta#lent1$
+
+output:
+	IhubTalent1 
+	
+*/
+class String_06 
+{
+	public static void main(String[] args) 
+	{
+		String str = "I_hub@Ta#lent1$";
+		str = str.replaceAll("^A-Za-z0-9","");
+		System.out.println(str);
+	}
+}

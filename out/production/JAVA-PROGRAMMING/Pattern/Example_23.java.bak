@@ -1,0 +1,36 @@
+/*
+
+Assignment
+===========
+Q) Write a java program to display below loop pattern?
+
+4 4 4 4 4 4 4
+4 3 3 3 3 3 4  
+4 3 2 2 2 3 4 
+4 3 2 1 2 3 4
+4 3 2 2 2 3 4
+4 3 3 3 3 3 4
+4 4 4 4 4 4 4
+
+*/
+
+
+class Example_23 
+{
+	public static void main(String[] args) 
+	{
+		int n = 4;
+		int size = 7;
+		for(int i = 0 ; i <size; i ++ ){
+			
+			for(int j=0;j<size;j++)
+			{
+				int value= n - Math.min(Math.min(i,j),Math.min(size-i-1,size-j-1));
+				System.out.print(value+" ");
+			}
+			System.out.println();
+			
+			
+		}
+	}
+}

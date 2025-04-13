@@ -1,0 +1,33 @@
+/* 
+Q) Write a java program to segregate array elements?
+
+input:
+	1 0 0 1 1 0 1 0 0 1
+
+output:
+	0 0 0 0 0 1 1 1 1 1 
+	*/
+
+class SortZeroAndOne 
+{
+	public static void main(String[] args) 
+	{
+	    int [] arr = {1 ,0, 0 ,1, 1, 0, 1, 0, 0, 1};
+		
+		int[] newArray = new int[arr.length];
+		
+		int j = 0;
+		for(int i : arr){
+			if(i == 0){
+				newArray[j++] = i;
+			}
+		}
+		while(j<arr.length){
+			newArray[j++] = 0;
+		}
+		
+		for(int i : newArray){
+			System.out.println(i);
+		}
+	}
+}

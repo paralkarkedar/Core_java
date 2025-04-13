@@ -1,0 +1,22 @@
+
+//Q) Write a java program to check given alphabet is a uppercase letter, lowercase letter, digit or a special symbol?
+import java.util.Scanner;
+class Example_07 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Please Enter The Charcter: ");
+		Scanner sc = new Scanner(System.in);
+		char ch = sc.next().charAt(0);
+		
+		if(ch >= 'A' && ch <= 'Z')
+			System.out.println("The Input is Upper case...");
+		else if(ch >= 'a' && ch <= 'z')
+			System.out.println("The Input is Lower case.........");
+		else if(ch >=0 && ch<=9)
+			System.out.println("The Iput is Number.........");
+		else
+			System.out.println("Enter the valid char....");
+		
+	}
+}

@@ -1,0 +1,17 @@
+//Q) Write a java program to find out area of a circle?
+import java.util.*;
+class Circle 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Please enter the redius");
+		Scanner sc = new Scanner(System.in);
+		int r = sc.nextFloat();
+		
+		
+		
+		//logic
+		float ans = 3.14f*r*r;
+		System.out.println("Area of circle is : "+ ans);
+	}
+}

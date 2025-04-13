@@ -1,0 +1,18 @@
+
+/* Q) Write a java program to display duplicate elements from given array?
+
+Input:
+	6 8 2 3 1 5 4 2 6 8 
+
+output:
+	6 8 2 
+	
+	*/
+
+class  DuplicateElements
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello World!");
+	}
+}

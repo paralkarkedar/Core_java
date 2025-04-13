@@ -1,0 +1,59 @@
+/*
+Orchasp Interview Question
+==========================
+Write a java program to calculate costs based on user input. The program
+should prompt users to enter the total weight of items(in kilograms) and the shipping destination (domestic or international).
+for demostic orders, the program should charge Rs.500 for weights upto 5 kg and Rs.100 per additional kg.
+for international orders, it should charge Rs.1000 for weights upto 5 kg , Rs.200 per additional kg , and a Rs.500 surcharge for weights exceeding 10 kg. print calculated shipping cost.
+
+
+input:
+	Enter the total weight of items : 11
+
+	Enter the shipping destination : domestic 
+
+output: 
+	1100  (500(5kg) + 600(6kg))
+	
+	
+*/
+
+import java.util.Scanner;
+class Example_09 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter the Weight: ");
+		Scanner sc = new Scanner(System.in);
+		int  weight = sc.nextInt();
+		
+		System.out.println("Please Enter your shipping destination ( domestic or international) : ");
+		String destination = sc.next();
+		
+		if(destination.equals("domestic")){
+			
+			if( weight <=5){
+				System.out.println(500);
+		    }
+			else{
+				System.out.println( 500 + (weight-5) *100);
+				}
+		
+			
+	}
+	else if(destination.equals("international")){
+			
+			if( weight <5){
+				System.out.println(1000);
+		    }
+			else if(weight <=10 && weight >=5){
+				System.out.println( 1000 + (weight-5) *200);
+				}
+				else
+					System.out.println( 500 + (weight-5) *200 + 500);
+		
+			
+	}
+}
+
+}

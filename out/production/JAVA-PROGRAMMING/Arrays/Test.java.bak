@@ -1,0 +1,50 @@
+class Student{
+	private int studId;
+	private int studFee;
+	private String  studName;
+	
+  // setter method 
+  public void setStudId(int studId){
+	this.studId = studId;
+  }
+  
+   public void setStudFee(int studFee){
+	this.studFee = studFee;
+  }
+  
+   public void setStudName(String studName){
+	this.studName = studName;
+  }
+  
+  //getter method
+  public int getStudId(){
+	return studId;
+  }
+  
+    public int getStudFee(){
+	return studFee;
+  }
+  
+    public String getStudName(){
+	return studName;
+  }
+  
+  
+}
+
+
+class Test
+{
+	public static void main(String[] args) 
+	{
+		Student s  = new Student();
+		s.setStudId(3);
+		s.setStudFee(3399);
+		s.setStudName("Kedar paralkar");
+		
+		System.out.println("Student Id : " + s. getStudId());
+		System.out.println("Student Fee : " + s. getStudFee());
+		System.out.println("Student Name : " + s. getStudName());
+		
+	}
+}
